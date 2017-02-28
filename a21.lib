@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oleg's Chocolate Factory</title>
+        <style type = "text/css">
+
+        body { background: linear-gradient(#00A3EF,#FFFFFF ) no-repeat; margin: 0px; padding: 0px;} 
+
+        div.main { 
+  z-index: 1; 
+    width: 75%;
+    font-family: 'Helvetica Neue', sans-serif; 
+    text-align: center;
+    min-height: 800px;
+    background-color:white;
+    margin: 1px auto;
+    border-style:solid;
+    border-color:black;
+    border:2px;
+    border-radius:25px;
+  background-size: 280px 260px;
+    background-repeat: no-repeat;
+  padding-top: 10px;
+  padding: 25px;
+  position:relative;
+}
+        div.hea { 
+    color:white;
+    text-align: center;
+   
+}
+
+
+
+
+
+   .show{
+        width:100%; 
+        border-collapse:collapse; 
+    }
+    .show td{ 
+        padding:7px; border:#4e95f4 1px solid;
+    }
+    /* provide some minimal visual accomodation for IE8 and below */
+    .show tr{
+        background: #b8d1f3;
+    }
+    /*  Define the background color for all the ODD background rows  */
+    .show tr:nth-child(odd){ 
+        background: #b8d1f3;
+    }
+    /*  Define the background color for all the EVEN background rows  */
+    .show tr:nth-child(even){
+        background: #dae5f4;
+    }
+
+
+
+
+
+.red {
+    color: red;
+}
+
+ </style>
+ </head>
+ <body>
+
+
+                <div class="hea">
+                <h1>Oleg Mytryniuk Chocolate Factory</h1>
+    <p> <form method="post" action=""><a href="add.php">Add</a> &nbsp   <a href="view.php">View All</a>
+        &nbsp  &nbsp  Search in description &nbsp &nbsp <input name = "search" type="text"> &nbsp &nbsp  <input name="searchbutton" type="submit" value="Search"> &nbsp &nbsp &nbsp 
+        <?php  echo " ".$loguser.",  Role: ".$role." "?> <a href="logout.php"> Log-out </a></form> </p>
+            </div>
+                 </body>
+                
+</html>
